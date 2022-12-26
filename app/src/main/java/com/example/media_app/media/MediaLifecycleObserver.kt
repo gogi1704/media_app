@@ -6,24 +6,28 @@ import androidx.lifecycle.Lifecycle.Event.*
 
 class MediaLifecycleObserver : LifecycleEventObserver {
 
-    var player: MediaPlayer? = MediaPlayer()
+    var playState = false
+    var musicNow = ""
+
+    var mediaPlayer: MediaPlayer? = MediaPlayer()
 
     fun play() {
-        player?.setOnPreparedListener {
+        mediaPlayer?.setOnPreparedListener {
             it.start()
         }
-        player?.prepareAsync()
+        mediaPlayer?.prepareAsync()
     }
-
 
     override fun onStateChanged(source: LifecycleOwner, event: Lifecycle.Event) {
         when (event) {
-            ON_PAUSE -> player?.pause()
+            ON_PAUSE -> {
+                mediaPlayer?.pause()
+            }
             ON_STOP -> {
-                player?.release()
-                player = null
+                mediaPlayer?.release()
             }
             ON_DESTROY -> source.lifecycle.removeObserver(this)
+
             else -> Unit
         }
     }
