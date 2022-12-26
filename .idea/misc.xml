@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/zoral/AndroidStudioProjects/media_app/app/src/main/res/layout/activity_main.xml" value="0.21603260869565216" />
-        <entry key="..\:/Users/zoral/AndroidStudioProjects/media_app/app/src/main/res/layout/item_layout.xml" value="0.291970802919708" />
+        <entry key="..\:/Users/zoral/AndroidStudioProjects/media_app/app/src/main/res/drawable/ic_play_circle_24.xml" value="0.121" />
+        <entry key="..\:/Users/zoral/AndroidStudioProjects/media_app/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/zoral/AndroidStudioProjects/media_app/app/src/main/res/layout/item_layout.xml" value="0.264" />
       </map>
     </option>
   </component>
